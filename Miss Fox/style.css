@@ -1,0 +1,673 @@
+/***************************************************************
+ * Theme Name:  Miss Fox
+   Author:      Anya Slavina
+   Author URI:  http://anyaslavina.com
+   Description: A tiny theme focused on content. Made with love.
+   Version:     1.0
+   License:     GNU General Public License
+   License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
+***************************************************************/
+
+
+
+/*********************** CSS Reset ****************************/
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+address,
+big,
+blockquote,
+button,
+caption,
+cite,
+code,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+label,
+legend,
+li,
+ol,
+p,
+small,
+strike,
+sub,
+sup,
+table,
+td,
+th,
+tr,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100%;
+    line-height: 1;
+    text-align: left;
+}
+
+.comment .reply,
+.comment-awaiting-moderation,
+blockquote p,
+em,
+fieldset legend,
+footer p+p,
+label {
+    font-style: italic;
+}
+
+.post .meta p,
+.post hr,
+.title,
+caption,
+header h2,
+header p {
+    text-align: center;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote:after,
+blockquote:before {
+    content: "";
+}
+
+a {
+    outline: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+    display: none;
+}
+
+
+
+/********************** Document setub ************************/
+body {
+    background: #fff;
+    border: none;
+    color: #111;
+    font-size: 18px;
+}
+
+body * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'PT Serif', Georgia, serif;
+}
+
+body a {
+    color: #111;
+    text-decoration: none;
+}
+
+body a:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+.clear {
+    clear: both;
+}
+
+::selection {
+    background: #111;
+    color: #FFF;
+}
+
+input::-webkit-input-placeholder {
+    color: #999;
+}
+
+input:-ms-input-placeholder {
+    color: #999;
+}
+
+input::-moz-placeholder {
+    color: #999;
+}
+
+
+
+/*********************** Structure ****************************/
+.wrapper {
+    margin: 0 auto;
+    max-width: 90%;
+    width: 620px;
+}
+
+.content * {
+    max-width: 100%;
+}
+
+
+
+/************************* Header *****************************/
+header {
+    margin: 0 auto 100px;
+    width: 90%;
+}
+
+header h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 80px;
+}
+
+header p {
+    margin-top: 20px;
+}
+
+#logo {
+    margin-top: 113px;
+}
+
+#logo img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+/************************ Content *****************************/
+.content a {
+    border-bottom: 1px solid #111;
+}
+
+.content a:hover {
+    border-color: #666;
+    color: #666;
+    text-decoration: none;
+}
+
+.meta,
+.meta a,
+.meta a:hover {
+    color: #999;
+}
+
+.post p {
+    line-height: 1.55;
+    margin-bottom: 30px;
+}
+
+.post p:last-child {
+    margin-bottom: 0;
+}
+
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6 {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.post hr {
+    border: none;
+    margin: 40px 0;
+}
+
+.content>ol,
+.content>ul {
+    margin-bottom: 30px;
+}
+
+.post ol,
+.post ul {
+    margin-left: 1.5rem;
+}
+
+.post ul {
+    list-style: disc;
+}
+
+.post ul ul {
+    list-style: circle;
+}
+
+.post ul ul ul {
+    list-style: square;
+}
+
+.post ol {
+    list-style: decimal;
+}
+
+.post ol ol {
+    list-style: lower-alpha;
+}
+
+.post ol ol ol {
+    list-style: lower-roman;
+}
+
+.post li {
+    line-height: 1.5;
+    margin-top: .5em;
+}
+
+dd+dt {
+    margin-top: 15px;
+}
+
+.comment-respond:before,
+.comments .comment-respond:after,
+.comments:before,
+.pagination:before,
+.post:before,
+footer:before {
+    background: url(images/sep.png) center no-repeat;
+    background-size: auto 100%;
+    content: "";
+    display: block;
+    height: 16px;
+    margin: 80px auto;
+}
+
+.title {
+    line-height: 1.4;
+}
+
+.featured-image {
+    display: block;
+    margin: 0 auto 30px;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.content .attachment a img  {
+	  display: block;
+    margin-right: auto;
+    margin-left: auto;
+} /* Tiled gallery single image */
+
+div.wp-caption {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.alignleft,
+.alignright {
+    margin-bottom: 20px;
+    max-width: 50%;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 20px;
+}
+
+.alignright {
+    float: right;
+}
+
+.aligncenter,
+.alignnone {
+    margin: 0 auto;
+}
+
+.gallery-caption,
+.wp-caption-text {
+    font-size: .9em;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.alignright .wp-caption-text {
+    text-align: right;
+}
+
+.meta {
+    margin-top: 30px;
+}
+
+.post .meta p {
+    line-height: 1.55;
+    margin-bottom: 0;
+}
+
+span.sep {
+    margin: 0 15px;
+}
+
+.meta p:first-child+p {
+    margin-top: 15px;
+}
+
+
+
+/****************** Screen MissFox text ************************/
+.screen-missfox-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute!important;
+    width: 1px;
+}
+
+.screen-missfox-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .6);
+    clip: auto!important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}
+
+
+
+/*********************** Blockquote ***************************/
+blockquote {
+    border-left: 1px solid #ccc;
+    margin: 0 0 30px;
+    padding: 0 0 0 30px;
+}
+
+blockquote cite:before {
+    content: "— ";
+}
+
+
+
+/************************ Inputs ******************************/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 25px;
+}
+
+fieldset legend {
+    font-size: .9em;
+    padding: 0 15px;
+}
+
+label {
+    font-size: .9em;
+    margin-bottom: 10px;
+}
+
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=text],
+input[type=url],
+textarea {
+    border: 1px solid #ddd;
+    color: #111;
+    display: block;
+    font-size: .9em;
+    margin: 0 0 15px;
+    padding: 15px;
+    width: 100%;
+}
+
+textarea {
+    line-height: 1.5;
+    height: 200px;
+}
+
+input.button,
+input[type=submit],
+input[type=button] {
+    background: #111;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 14px 24px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+caption,
+th {
+    border-bottom: 1px solid #ddd;
+    font-weight: 700;
+}
+
+input.button:hover,
+input[type=submit]:hover,
+input[type=button]:hover {
+    background: #333;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    font-size: .9em;
+    margin-bottom: 30px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+td,
+th {
+    line-height: 1.4;
+    margin: 0;
+    overflow: visible;
+    padding: 2.5%;
+}
+
+caption {
+    font-size: 13px;
+    padding-bottom: 2.5%;
+    text-transform: uppercase;
+}
+
+thead {
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+
+tbody>tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+
+
+/************************ Comments ****************************/
+.comment {
+    margin-top: 40px;
+}
+
+.comment a {
+    text-decoration: underline;
+}
+
+.commentlist>.comment:first-child {
+    margin-top: 0;
+}
+
+.comment .comment {
+    margin: 40px 0 0 30px;
+}
+
+.comment .reply a,
+.comment-author a,
+.comment-meta a {
+    text-decoration: none;
+}
+
+.comment .reply a,
+.comment-meta a,
+.comment-meta a:hover {
+    color: #999;
+}
+
+.comment-author {
+    padding-left: 50px;
+    position: relative;
+}
+
+.bypostauthor .comment-author cite {
+    font-weight: 700;
+}
+
+.comment-author .says {
+    display: none
+}
+
+.comment-author .avatar {
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 40px;
+}
+
+.comment-awaiting-moderation {
+    font-size: 14px;
+    padding-left: 50px;
+}
+
+.comment-meta {
+    font-size: 14px;
+    margin: 2px 0 20px;
+    padding-left: 50px;
+}
+
+.comment .reply {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: right;
+}
+
+.aligncenter .wp-caption-text,
+.logged-in-as,
+.pagination,
+.post .comment-reply-title {
+    text-align: center;
+}
+
+.comment .reply a:hover {
+    text-decoration: underline;
+}
+
+.comment-respond p+p {
+    margin-top: 20px;
+}
+
+.logged-in-as {
+    margin: -10px 0 30px;
+}
+
+.alignright,
+.pagination *+* {
+    margin-left: 30px;
+}
+
+.comment-respond label {
+    display: block;
+}
+
+
+
+/************************ Footer ******************************/
+footer,
+footer p {
+    text-align: center;
+}
+
+footer {
+    padding: 0 0 20px;
+}
+
+footer p {
+    line-height: 1;
+}
+
+footer p+p {
+    margin-top: 15px;
+}
+
+
+
+/****************** @media max-width: 500px ********************/
+@media (max-width:500px) {
+    .comment-respond:before,
+    .comments .comment-respond:after,
+    .comments:before,
+    .pagination:before,
+    .post:before,
+    footer:before {
+        margin: 30px auto;
+    }
+}
+
+
+
+/****************** @media max-width: 620px ********************/
+@media (max-width:620px) {
+    body {
+        font-size: 16px;
+    }
+    header {
+        margin-bottom: 40px;
+    }
+    header h2 {
+        margin-top: 40px;
+    }
+    .comment-respond:before,
+    .comments .comment-respond:after,
+    .comments:before,
+    .pagination:before,
+    .post:before,
+    footer:before {
+        margin: 50px auto
+    }
+    .featured-image {
+        margin-left: -50vw;
+        position: relative;
+        left: 50%;
+        width: 100%;
+    }
+    span.sep {
+        margin: 0 10px;
+    }
+    .pagination a+a {
+        margin-left: 20px;
+    }
+    footer {
+        padding-bottom: 50px;
+    }
+}
