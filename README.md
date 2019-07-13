@@ -1,2 +1,9 @@
-# missfox-wordpress
-Miss Fox is a tiny WordPress Theme. Made by WordPress coding standards, it weights only 73 kb. So it is super fast and light. It looks beautiful on any device because it is responsive. It is translation ready. You can set your logo or leave site title and tagline. It made with Love.
+
+/***************************************************************
+ * Theme Name:  Miss Fox
+   Author:      Anna Slavina
+   Description: A tiny theme focused on content. Made with love.
+   Version:     1.0
+   License:     GNU General Public License
+   License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
+***************************************************************/
